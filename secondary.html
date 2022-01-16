@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            E-billing
+        </title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> E-Billing</h1>
+        </div>
+        <hr>
+        <nav style="width:100%; margin: 100px; display:inline; text-align: center;">
+            <a href="" class="h"> Home
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="" class="h"> Notifications
+            </a>    
+        </nav>
+        <br>
+        <p style="text-align: right;">
+            * Indicates required field
+        </p>
+        <div class="form">
+            <form action="" method="GET">
+                <div id="info">
+                    <label for="doc">Document type:</label>
+                    <select name="doc" id="doc" >
+                        <option value="" disabled selected>Select Document type</option>
+                        <option value="bill">Bill</option>
+                        <option value="invoice">Tax Invoice</option>
+                        <option value="challan">Challan</option>
+                    </select>
+                    <p>
+                        Document Date:
+                        <input type="datetime-local" name="" id="">
+                    </p>
+                    <fieldset>
+                    <legend><h2>Seller details :</h2></legend>
+                    <p>
+                        Seller Name: *
+                        <input type="text" requiredname="name">
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Male<input type="radio" name="gender" id="male" required>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Female <input type="radio" name="gender" id="" required>
+                        </fieldset>
+                    </p>
+                    <p>
+                        Seller Address: *
+                        <textarea name="address" id="" cols="50" rows="5"></textarea>
+                    </p>
+                    <p>
+                        Pincode:
+                        <input type="text" requiredname="name">
+                    </p>
+                    <p>
+                        Email: <input type="email" required>
+                    </p>
+                    <p>
+                        Mobile no. : <input type="number" required>
+                    </p>
+                       
+                </fieldset>
+                <fieldset>
+                <legend><h2>Customer details :</h2></legend>
+                    <p>
+                        Customer Name: *
+                        <input type="text" requiredname="name">
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Male<input type="radio" name="gender" id="male">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Female <input type="radio" name="gender" id="Female">
+                        </fieldset>
+                    </p>
+                    <p>
+                        Customer Address: *
+                        <textarea name="address" id="" cols="50" rows="5"></textarea>
+                    </p>
+                    <p>
+                        Pincode:
+                        <input type="text" requiredname="name">
+                    </p>
+                    <p>
+                        Email: <input type="email" required>
+                    </p>
+                    <p>
+                        Mobile no. : <input type="number" required>
+                    </p>
+                       
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Item details :</h2></legend>
+                    <p>
+                        Product Name: *
+                        <input type="text" requiredname="name">
+                    </p>
+                    <p>
+                        Company: *
+                        <input type="text" requiredname="Company">
+                    </p>
+                    <p>
+                        Quantity: *
+                        <input type="number" requiredname="quantity">
+                    </p>
+                    <p>
+                        Price: *
+                        <input type="number" requiredname="Price">
+                    </p>
+                    <p>
+                        Total Price: 
+                        <input type="number" requiredname="total Price">
+                    </p>
+                    <p>
+                        Tax:
+                        <input type="number" requiredname="Tax" placeholder="0 if no tax">
+                    </p>
+                    <p>
+                        Grand Total: 
+                        <input type="number" requiredname="grand total">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Transaction details</h2></legend>
+                    <p>
+                        <fieldset>
+                        <legend>Payment mode</legend>
+                        <input type="radio" id="card" value="card" name="mode">
+                        <label for="card">Credit card/Debit card</label><br>
+                        <input type="radio" id="bank" value="bank" name="mode">
+                        <label for="bank">Online banking</label><br>
+
+                        </fieldset>
+                    </p>
+                </fieldset>
+                </div>
+            </form>
+            <br><br><br><br><br>
+            <button type="submit" form="form1" value="Submit">Submit</button>
+        </div>
+    </body>
+</html>
